@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&family=Orbit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100vh;
+    font-size: 100%;
+    /* font-family: 'Hahmlet', serif; */
+    font-family: 'Orbit', sans-serif;
+
+    /* background-color: #2e2e2e; */
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border: none;
+    background-color: inherit;
+   
+
+}
+
+
+.wrap{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.box{
+ 
+    text-align: center;
+
+}
+
+
+#result-area{
+    width: 250px;
+    border: 1px solid #000;
+    margin: 28px 0 12px;
+    padding-bottom: 4px;
+}
+
+#result-area{
+    font-weight: 700;
+}
+#chance-area{
+    font-weight: 600;
+}
+
+
+
+
+/* 숫자 입력창  */
+.num-zone {
+    position: relative;
+    margin-top: 35px;
+  
+}
+  
+input {
+    font-size: 15px;
+    color: #222222;
+    width: 250px;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+    text-align: center;
+}
+
+input::placeholder { color: #aaaaaa; }
+input:focus { outline: none; }
+
+span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0%;  
+    
+    background-color: #666;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+  
+label {
+    position: absolute;
+    color: #aaa;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    bottom: 8px;
+    transition: all .2s;
+}
+
+input:focus ~ label, 
+input:valid ~ label {
+    font-size: 12px;
+    bottom: 40px;
+    color: #ababab;
+    font-weight: bold;
+}
+
+input:focus ~ span, input:valid ~ span {
+    width: 100%;
+}
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+/* //버튼// */
+
+.btn-3d {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    margin: 20px 10px 10px;
+    border-radius: 6px;
+    text-align: center;
+    transition: top .01s linear;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    background-color: #55ff93;
+    box-shadow: 
+        0 0 0 1px #000000 inset, 
+        0 0 0 2px #000000 inset, 
+        0 8px 0 0 #000000, 
+        0 8px 0 1px rgba(0,0,0,0.4), 
+        0 8px 8px 1px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+  .btn-3d:active {
+    
+    box-shadow: 0 0 0 1px #13ff61 inset,
+          0 0 0 2px rgba(255,255,255,0.15) inset,
+          0 0 0 1px rgba(0,0,0,0.4);
+    top: 9px;
+  }
